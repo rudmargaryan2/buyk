@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<title>shop</title>
+</head>
+<body>
+ <div class="container-fluid">
+        <header>
+            <div class="row">
+                <div class = "col-3 d-none d-lg-block">
+                    <h5>Telephone: 2459844 <h5>
+                 </div>
+
+                 <div class = "col-3 d-none d-lg-block">
+                    <h5> Welcome tu bike store<h5>
+                 </div>
+
+                 <div class="col-6 col-lg-2 ">
+                    <select class="custom-select">
+                        <option selected>AM</option>
+                        <option value="1">RU</option>
+                        <option value="2">EN</option>
+                      </select>
+                 </div>
+
+                 <div class="col-6 col-lg-2 ">
+                    <select class="custom-select">
+                        <option selected>AMD</option>
+                        <option value="1">DOLAR</option>
+                        <option value="2">RUB</option>
+                      </select>
+                 </div>
+
+                 <div class="col-2 d-none d-lg-block">
+                    <button type="button" class="btn btn-success">
+                        Wishlist <span class="badge badge-light">3</span>
+                        </button>
+                 </div>
+                </div>
+            
+                 
+              
+                <nav class="navbar navbar-dark bg-dark">
+                <div class="col-5">
+                  <a class="navbar-brand">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQDE_Dx6ojXW2rSyLwT1fsozVeCYEI8TD77XQ&usqp=CAU" alt="#" style="width: 100px;">
+                  </a>
+                </div>
+
+                <div class="col-5 d-none d-lg-block ">
+                  <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+               </div>
+  
+                  <div class="btn-group dropdown col-4 col-lg-2" role="group">
+                      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       My Account
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      	<a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModalLong">Login</a>
+    <a class="dropdown-item" href="#" data-toggle='modal' data-target="#c">Register</a>
+    <a class="dropdown-item" href="#">My order</a>
+    <a class="dropdown-item" href="#">Acount settings</a>
+
+
+        </div>
+                    </div>
+                </nav>
+                      <div class="modal fade" id="c" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Sign up</button>
+    </div>
+  </div>
+</form>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+                
+                 
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #28b315;">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Home
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="shop.html">buyk</a>
+                          <a class="dropdown-item" href="shop.html">buyk</a>
+                          <a class="dropdown-item" href="shop.html">buyk</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Music
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Oldest First</a>
+                          <a class="dropdown-item" href="#">Newest Firts</a>
+                          <a class="dropdown-item" href="#">All</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                         Kids
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Oldest First</a>
+                          <a class="dropdown-item" href="#">Newest Firts</a>
+                          <a class="dropdown-item" href="#">All</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Merch
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Oldest First</a>
+                          <a class="dropdown-item" href="#">Newest Firts</a>
+                          <a class="dropdown-item" href="#">All</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Accessories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Oldest First</a>
+                          <a class="dropdown-item" href="#">Newest Firts</a>
+                          <a class="dropdown-item" href="#">All</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Tickets
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">This mouth</a>
+                          <a class="dropdown-item" href="#">Next mouth</a>
+                          <a class="dropdown-item" href="#">World Tour</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">buyk</a></li>
+    <li class="breadcrumb-item"><a href="#">shop</a></li>
+    <li class="breadcrumb-item active" aria-current="page">mountain buyk</li>
+  </ol>
+</nav>
+ <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Hot sales!</strong> You have to register to buy something.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+            </div>
+<div class="container-fluid">
+	<div class="row container-fluid">
+		<div class="col-md-3 col-12 border border-info"><br>
+			<a class="text-info " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  select brand
+  </a><br><br>
+  		
+  <div class="collapse" id="collapseExample">
+ 
+<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>rambo</option>
+    <option value="1">susuki</option>
+    <option value="2">Bmw</option>
+    <option value="3">fantasy</option>
+  </select>
+
+  
+</div>
+	<a class="text-info mt-" data-toggle="collapse" href="#s" role="button" aria-expanded="false" aria-controls="s">
+  select color
+  </a><br><br>
+<div class="collapse" id="s">
+	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>red</option>
+    <option value="1">black</option>
+    <option value="2">blue</option>
+    <option value="3">yellow</option>
+  </select>
+</div>
+	<a class="text-info" data-toggle="collapse" href="#sd" role="button" aria-expanded="false" aria-controls="sd">
+  select size
+  </a><br><br>
+  <div class="collapse" id="sd">
+	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>26</option>
+    <option value="1">28</option>
+    <option value="2">24</option>
+    <option value="3">20</option>
+  </select>
+		</div>
+		<a class="text-info" data-toggle="collapse" href="#sda" role="button" aria-expanded="false" aria-controls="sda">
+max weight
+  </a><br><br>
+   <div class="collapse" id="sda">
+  	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>125</option>
+    <option value="1">120</option>
+    <option value="2">100</option>
+    <option value="3">80</option>
+  </select>
+</div>
+	<a class="text-info" data-toggle="collapse" href="#sdas" role="button" aria-expanded="false" aria-controls="sdas">
+select type
+  </a><br><br>
+  <div class="collapse" id="sdas">
+  	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>mountain</option>
+    <option value="1">baby</option>
+    <option value="2">long road</option>
+    <option value="3">wather</option>
+  </select>
+</div>
+<a class="text-info " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  select brand
+  </a><br><br>
+  		
+  <div class="collapse" id="collapseExample">
+ 
+<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>rambo</option>
+    <option value="1">susuki</option>
+    <option value="2">Bmw</option>
+    <option value="3">fantasy</option>
+  </select>
+
+  
+</div>
+	<a class="text-info mt-" data-toggle="collapse" href="#s" role="button" aria-expanded="false" aria-controls="s">
+  select color
+  </a><br><br>
+<div class="collapse" id="s">
+	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>red</option>
+    <option value="1">black</option>
+    <option value="2">blue</option>
+    <option value="3">yellow</option>
+  </select>
+</div>
+	<a class="text-info" data-toggle="collapse" href="#sd" role="button" aria-expanded="false" aria-controls="sd">
+  select size
+  </a><br><br>
+  <div class="collapse" id="sd">
+	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>26</option>
+    <option value="1">28</option>
+    <option value="2">24</option>
+    <option value="3">20</option>
+  </select>
+		</div>
+		<a class="text-info" data-toggle="collapse" href="#sda" role="button" aria-expanded="false" aria-controls="sda">
+max weight
+  </a><br><br>
+   <div class="collapse" id="sda">
+  	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>125</option>
+    <option value="1">120</option>
+    <option value="2">100</option>
+    <option value="3">80</option>
+  </select>
+</div>
+	<a class="text-info" data-toggle="collapse" href="#sdas" role="button" aria-expanded="false" aria-controls="sdas">
+select type
+  </a><br><br>
+  <div class="collapse" id="sdas">
+  	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>mountain</option>
+    <option value="1">baby</option>
+    <option value="2">long road</option>
+    <option value="3">wather</option>
+  </select>
+</div>
+<a class="text-info " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  select brand
+  </a><br><br>
+  		
+  <div class="collapse" id="collapseExample">
+ 
+<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>rambo</option>
+    <option value="1">susuki</option>
+    <option value="2">Bmw</option>
+    <option value="3">fantasy</option>
+  </select>
+
+  
+</div>
+	<a class="text-info mt-" data-toggle="collapse" href="#s" role="button" aria-expanded="false" aria-controls="s">
+  select color
+  </a><br><br>
+<div class="collapse" id="s">
+	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>red</option>
+    <option value="1">black</option>
+    <option value="2">blue</option>
+    <option value="3">yellow</option>
+  </select>
+</div>
+	<a class="text-info" data-toggle="collapse" href="#sd" role="button" aria-expanded="false" aria-controls="sd">
+  select size
+  </a><br><br>
+  <div class="collapse" id="sd">
+	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>26</option>
+    <option value="1">28</option>
+    <option value="2">24</option>
+    <option value="3">20</option>
+  </select>
+		</div>
+		<a class="text-info" data-toggle="collapse" href="#sda" role="button" aria-expanded="false" aria-controls="sda">
+max weight
+  </a><br><br>
+   <div class="collapse" id="sda">
+  	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>125</option>
+    <option value="1">120</option>
+    <option value="2">100</option>
+    <option value="3">80</option>
+  </select>
+</div>
+	<a class="text-info" data-toggle="collapse" href="#sdas" role="button" aria-expanded="false" aria-controls="sdas">
+select type
+  </a><br><br>
+  <div class="collapse" id="sdas">
+  	<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>mountain</option>
+    <option value="1">baby</option>
+    <option value="2">long road</option>
+    <option value="3">wather</option>
+  </select>
+</div>
+	</div>
+	<div class="col-md-9 col-12 container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-6 border border-danger" >
+			<div class="row">
+					<div class="col-md-3 col-12 ">
+					<img src="https://m.media-amazon.com/images/I/61SOjQiL+DL._AC_UY218_.jpg" class="img-fluid">
+				</div>
+				<div class="col-md-7 mt-3 col-12">
+					<a href="" class="text-info">Roadmaster - 26 Inches Granite Peak Men's Mountain Bike, Black/Blue</a>
+					<p class="d-none d-lg-block ">Shipping Weight: 37 pounds (View shipping rates and policies)
+ASIN: B07G6GBHD9
+Customer Reviews: 3.9 out of 5 stars225 customer ratings
+Amazon Best Sellers Rank: #13,162 in Sports & Outdoors (See Top 100 in Sports & Outdoors)
+#14 in Bikes</p>
+				</div>
+				<div class="col-md-2 col-12 mt-5">
+					<h1>150$</h1>
+
+		<a href="buy.html" class="btn btn-success">BUY</a>				</div>
+			</div>
+			</div>
+						<div class="col-md-12 col-6 border border-danger" >
+			<div class="row">
+					<div class="col-md-3 col-12 ">
+					<img src="https://m.media-amazon.com/images/I/61SOjQiL+DL._AC_UY218_.jpg" class="img-fluid">
+				</div>
+				<div class="col-md-7 mt-3 col-12">
+					<a href="" class="text-info">Roadmaster - 26 Inches Granite Peak Men's Mountain Bike, Black/Blue</a>
+					<p class="d-none d-lg-block ">Shipping Weight: 37 pounds (View shipping rates and policies)
+ASIN: B07G6GBHD9
+Customer Reviews: 3.9 out of 5 stars225 customer ratings
+Amazon Best Sellers Rank: #13,162 in Sports & Outdoors (See Top 100 in Sports & Outdoors)
+#14 in Bikes</p>
+				</div>
+				<div class="col-md-2 col-12 mt-5">
+					<h1>150$</h1>
+		<a href="buy.html" class="btn btn-success">BUY</a>				</div>
+			</div>
+			</div>
+						<div class="col-md-12 col-6 border border-danger" >
+			<div class="row">
+					<div class="col-md-3 col-12 ">
+					<img src="https://m.media-amazon.com/images/I/61SOjQiL+DL._AC_UY218_.jpg" class="img-fluid">
+				</div>
+				<div class="col-md-7 mt-3 col-12">
+					<a href="" class="text-info">Roadmaster - 26 Inches Granite Peak Men's Mountain Bike, Black/Blue</a>
+					<p class="d-none d-lg-block ">Shipping Weight: 37 pounds (View shipping rates and policies)
+ASIN: B07G6GBHD9
+Customer Reviews: 3.9 out of 5 stars225 customer ratings
+Amazon Best Sellers Rank: #13,162 in Sports & Outdoors (See Top 100 in Sports & Outdoors)
+#14 in Bikes</p>
+				</div>
+				<div class="col-md-2 col-12 mt-5">
+					<h1>150$</h1>
+		<a href="buy.html" class="btn btn-success">BUY</a>				</div>
+			</div>
+			</div>
+						<div class="col-md-12 col-6 border border-danger" >
+			<div class="row">
+					<div class="col-md-3 col-12 ">
+					<img src="https://m.media-amazon.com/images/I/61SOjQiL+DL._AC_UY218_.jpg" class="img-fluid">
+				</div>
+				<div class="col-md-7 mt-3 col-12">
+					<a href="" class="text-info">Roadmaster - 26 Inches Granite Peak Men's Mountain Bike, Black/Blue</a>
+					<p class="d-none d-lg-block ">Shipping Weight: 37 pounds (View shipping rates and policies)
+ASIN: B07G6GBHD9
+Customer Reviews: 3.9 out of 5 stars225 customer ratings
+Amazon Best Sellers Rank: #13,162 in Sports & Outdoors (See Top 100 in Sports & Outdoors)
+#14 in Bikes</p>
+				</div>
+				<div class="col-md-2 col-12 mt-5">
+					<h1>150$</h1>
+		<a href="buy.html" class="btn btn-success">BUY</a>				</div>
+			</div>
+			</div>
+						<div class="col-md-12 col-6 border border-danger" >
+			<div class="row">
+					<div class="col-md-3 col-12 ">
+					<img src="https://m.media-amazon.com/images/I/61SOjQiL+DL._AC_UY218_.jpg" class="img-fluid">
+				</div>
+				<div class="col-md-7 mt-3 col-12">
+					<a href="" class="text-info">Roadmaster - 26 Inches Granite Peak Men's Mountain Bike, Black/Blue</a>
+					<p class="d-none d-lg-block ">Shipping Weight: 37 pounds (View shipping rates and policies)
+ASIN: B07G6GBHD9
+Customer Reviews: 3.9 out of 5 stars225 customer ratings
+Amazon Best Sellers Rank: #13,162 in Sports & Outdoors (See Top 100 in Sports & Outdoors)
+#14 in Bikes</p>
+				</div>
+				<div class="col-md-2 col-12 mt-5">
+					<h1>150$</h1>
+		<a href="buy.html" class="btn btn-success">BUY</a>				</div>
+			</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+      Contact us
+    </a>
+    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+      Live chat
+    </a>
+    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+      Shipping
+    </a>
+    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+      Term & conditions
+    </a>
+  </div>
+  <div class="row d-none d-lg-flex">
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 1</h5>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 2</h5>
+               <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 3</h5>
+              <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 4</h5>
+               <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 5</h5>
+               <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-dark text-white">
+    <div class="m-0 col-sm-12 col-lg-4 mt-sm-1 my-lg-4">
+      <p class="text-danger m-0">&#169; Tumo Center For Creative Technologies</p>
+    </div>
+    <div class="d-flex align-items-baseline mx-3 mt-3 col-lg-4 col-sm-12">
+             <img src="https://image.flaticon.com/icons/svg/889/889102.svg" class="px-1 ml-3" width="40px">
+             <img src="https://image.flaticon.com/icons/svg/1384/1384063.svg" class="px-1 ml-3" width="40px">
+             <img src="https://image.flaticon.com/icons/svg/2965/2965363.svg" class="px-1 ml-3" width="40px">
+             <img src="https://image.flaticon.com/icons/svg/732/732200.svg" class="px-1 ml-3" width="40px">
+              
+           </div>
+<div class="col-3  mt-sm-1 my-lg-4" style="display: flex;">
+   <p class="text-success  ">NUMBER:1202020</p>
+   <p class="text-success ">info:tumogmail@gmail.com</p>
+</div>
+  </div>
+ </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<title>shop</title>
+</head>
+<body>
+ <div class="container-fluid">
+        <header>
+            <div class="row">
+                <div class = "col-3 d-none d-lg-block">
+                    <h5>Telephone: 2459844 <h5>
+                 </div>
+
+                 <div class = "col-3 d-none d-lg-block">
+                    <h5> Welcome tu bike store<h5>
+                 </div>
+
+                 <div class="col-6 col-lg-2 ">
+                    <select class="custom-select">
+                        <option selected>AM</option>
+                        <option value="1">RU</option>
+                        <option value="2">EN</option>
+                      </select>
+                 </div>
+
+                 <div class="col-6 col-lg-2 ">
+                    <select class="custom-select">
+                        <option selected>AMD</option>
+                        <option value="1">DOLAR</option>
+                        <option value="2">RUB</option>
+                      </select>
+                 </div>
+
+                 <div class="col-2 d-none d-lg-block">
+                    <button type="button" class="btn btn-success">
+                        Wishlist <span class="badge badge-light">3</span>
+                        </button>
+                 </div>
+                </div>
+            
+                 
+              
+                <nav class="navbar navbar-dark bg-dark">
+                <div class="col-5">
+                  <a class="navbar-brand">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQDE_Dx6ojXW2rSyLwT1fsozVeCYEI8TD77XQ&usqp=CAU" alt="#" style="width: 100px;">
+                  </a>
+                </div>
+
+                <div class="col-5 d-none d-lg-block ">
+                  <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+               </div>
+  
+                  <div class="btn-group dropdown col-4 col-lg-2" role="group">
+                      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       My Account
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      	<a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModalLong">Login</a>
+    <a class="dropdown-item" href="#" data-toggle='modal' data-target="#c">Register</a>
+    <a class="dropdown-item" href="#">My order</a>
+    <a class="dropdown-item" href="#">Acount settings</a>
+
+
+        </div>
+                    </div>
+                </nav>
+                      <div class="modal fade" id="c" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Sign up</button>
+    </div>
+  </div>
+</form>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+                
+                 
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #28b315;">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Home
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">New clothes</a>
+                          <a class="dropdown-item" href="#">New album</a>
+                          <a class="dropdown-item" href="#">New accessories</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Music
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Oldest First</a>
+                          <a class="dropdown-item" href="#">Newest Firts</a>
+                          <a class="dropdown-item" href="#">All</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                         Kids
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Oldest First</a>
+                          <a class="dropdown-item" href="#">Newest Firts</a>
+                          <a class="dropdown-item" href="#">All</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Merch
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Oldest First</a>
+                          <a class="dropdown-item" href="#">Newest Firts</a>
+                          <a class="dropdown-item" href="#">All</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Accessories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Oldest First</a>
+                          <a class="dropdown-item" href="#">Newest Firts</a>
+                          <a class="dropdown-item" href="#">All</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Tickets
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">This mouth</a>
+                          <a class="dropdown-item" href="#">Next mouth</a>
+                          <a class="dropdown-item" href="#">World Tour</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">buyk</a></li>
+    <li class="breadcrumb-item"><a href="#">shop</a></li>
+    <li class="breadcrumb-item"><a href="#">mountain buyk</a></li>	
+    <li class="breadcrumb-item active" aria-current="page">rambo</li>
+  </ol>
+</nav>
+ <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Hot sales!</strong> You have to register to buy something.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+          <h1 class="text-primary">rambo quality</h1>
+          <div class="row">
+  <div class="col col-xl-3 col-lg-3 col-md-3 d-none d-sm-none d-md-block d-lg-block d-xl-block ">
+    <div class="row">
+      <div class="col col-xl-12 col-lg-12 col-md-12 d-none d-sm-none d-md-block d-lg-block d-xl-block "> <img src="https://images-na.ssl-images-amazon.com/images/I/71FtEGxgiVL._AC_SL1024_.jpg" class="img-thumbnail img-fluid w-50"></div>
+      <div class="col col-xl-12 col-lg-12 col-md-12 d-none d-sm-none d-md-block d-lg-block d-xl-block"> <img src="https://images-na.ssl-images-amazon.com/images/I/61Uq7AJChAL._AC_SL1000_.jpg"class="img-thumbnail img-fluid w-50"></div>
+      
+    </div>
+      </div>
+    <div class="col col-xl-3"> <img src="https://images-na.ssl-images-amazon.com/images/I/61nejgBAuyL._AC_SL1024_.jpg" class="img-fluid w-100"></div>
+    <div class="col col-xl-3">
+      <h2>$100</h2>
+      <form>
+  <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Quality</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+</form>
+<button type="button" class="btn btn-primary">Add to card</button>
+      <h4>petkakan</h4>
+      <div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+  <label class="custom-control-label" for="customSwitch1">wother case</label>
+</div>
+<div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch2">
+  <label class="custom-control-label" for="customSwitch2">signal</label>
+</div>
+<h4>all</h4>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline1">anvadox</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline2">pashtpanich anvadoxi</label>
+</div>
+    </div>
+</div>
+<div class="row">
+	<div class="container-fluid col-12">
+		<a class="btn btn-info" data-toggle="collapse" href="#one" role="button" aria-expanded="false" aria-controls="one"> info</a>
+		<a class="btn btn-info" data-toggle="collapse" href="#too" role="button" aria-expanded="false" aria-controls="too"> buy</a>
+				<a class="btn btn-info" data-toggle="collapse" href="#tree" role="button" aria-expanded="false" aria-controls="tree"> FAQ</a>
+
+<div class="collapse multi-collapse" id="one">
+      <div class="card card-body border border-danger">
+    【Accessories introduction】: F/Derailleur: Shimanos TZ-30; R/Derailleur: Shimanos TZ-50; Dial: EF51-7; Frame/Fork: bold front fork; Handlebars/handlebars: one handle; Tire: Six-cutter wheel; Frame: High carbon steel shock-absorbing folding frame; Brakes: BOLIDS disc brake; Tower wheel: ATA no positioning tower wheel; Foot pedal: mountain bike PC pedal; Chain: non-positioning.
+      </div>
+    </div>
+    <div class="collapse multi-collapse" id="too">
+      <div class="card card-body border border-danger">
+    【Size】: Tire size: 26 inches；Product size: 172 x (80-95) cm / 67.7 x (31.5-37.4) inches；Product folding size: 100x95x35cm / 39.37x37.4x13.78in；Product packaging size: 135x72x19cm / 52x28x7.5in.      </div>
+    </div>
+        <div class="collapse multi-collapse" id="tree">
+        	<div class="card card-body border border-danger">
+     【Advantage】：DAOT tires tear into dirt bike paths with ease; linear pull hand brakes deliver consistent stopping action; premium padded ATB saddle has stitched sides for lasting quality; alloy quick release provides easy seat height adjustment.   </div> </div>
+    </div>
+    <div class="col-12">
+    	 <div class="container-fluid  border border-info mt-5">
+    	Kobay-women Adult Mountain Bike, 26 inch Wheels, Mountain Trail Bike High Carbon Steel Folding Outroad Bicycles, 21-Speed Bicycle Full Suspension MTB ​​Gears Dual Disc Brakes Mountain Bicycle
+
+
+    	【Accessories introduction】: F/Derailleur: Shimanos TZ-30; R/Derailleur: Shimanos TZ-50; Dial: EF51-7; Frame/Fork: bold front fork; Handlebars/handlebars: one handle; Tire: Six-cutter wheel; Frame: High carbon steel shock-absorbing folding frame; Brakes: BOLIDS disc brake; Tower wheel: ATA no positioning tower wheel; Foot pedal: mountain bike PC pedal; Chain: non-positioning.
+【Size】: Tire size: 26 inches；Product size: 172 x (80-95) cm / 67.7 x (31.5-37.4) inches；Product folding size: 100x95x35cm / 39.37x37.4x13.78in；Product packaging size: 135x72x19cm / 52x28x7.5in.
+【Advantage】：DAOT tires tear into dirt bike paths with ease; linear pull hand brakes deliver consistent stopping action; premium padded ATB saddle has stitched sides for lasting quality; alloy quick release provides easy seat height adjustment.
+【Carbon Steel Mountain Bike】：With a charcoal gloss hardtail frame and 21 speeds to conquer the trails, the Stone Mountain is ready for outdoor adventures.
+【An exclusive】: Ideal for ages 13 and up and a minimum rider height of 5 feet; suspension fork handles bumps and dips for a smoother-feeling ride.
+    </div>
+    </div>
+   <div class="col-12">
+   	<div class="container-fluid">
+   			<div class="row border border-warning">
+				<h3 class="text-center col-12">MAYK ALSO LIKE</h3>
+				<div class="card col-md-3 col-12" style="width: 18rem;">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1586222515300-fa1992155ece?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">cannondale</h5>
+    <p class="card-text"><del>150$</del></p>
+        <p class="card-text">100$</p>
+    <a href="#" class="btn btn-primary">buy</a>
+  </div>
+</div>
+				<div class="card col-md-3 col-12" style="width: 18rem;">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1586222515300-fa1992155ece?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">cannondale</h5>
+<p class="card-text"><del>150$</del></p>
+        <p class="card-text">100$</p>
+    <a href="#" class="btn btn-primary">buy</a>
+  </div>
+</div>
+				<div class="card col-md-3 col-12" style="width: 18rem;">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1586222515300-fa1992155ece?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">cannondale</h5>
+<p class="card-text"><del>150$</del></p>
+        <p class="card-text">100$</p>
+    <a href="#" class="btn btn-primary">buy</a>
+  </div>
+</div>
+				<div class="card col-md-3 col-12" style="width: 18rem;">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1586222515300-fa1992155ece?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">cannondale</h5>
+<p class="card-text"><del>150$</del></p>
+        <p class="card-text">100$</p>
+    <a href="#" class="btn btn-primary">buy</a>
+  </div>
+</div>
+			</div>
+   	</div>
+   </div>
+	</div>
+	<div class="container-fluid">
+  <div class="row">
+    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+      Contact us
+    </a>
+    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+      Live chat
+    </a>
+    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+      Shipping
+    </a>
+    <a href="#" class="list-group-item list-group-item-action text-uppercase font-weight-bold text-center col-lg-3 col-sm-12">
+      Term & conditions
+    </a>
+  </div>
+  <div class="row d-none d-lg-flex">
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 1</h5>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 2</h5>
+               <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 3</h5>
+              <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 4</h5>
+               <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+    <div class="col pr-0 border">
+      <div class="list-group">
+        <h5 class="text-uppercase">Group 5</h5>
+               <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+        <a href="#" class="list-group-item-action font-weight-bold">link</a>
+        <a href="#" class="list-group-item-action">link</a>
+      </div>
+    </div>
+  </div>
+  <div class="row bg-dark text-white">
+    <div class="m-0 col-sm-12 col-lg-4 mt-sm-1 my-lg-4">
+      <p class="text-danger m-0">&#169; Tumo Center For Creative Technologies</p>
+    </div>
+    <div class="d-flex align-items-baseline mx-3 mt-3 col-lg-4 col-sm-12">
+             <img src="https://image.flaticon.com/icons/svg/889/889102.svg" class="px-1 ml-3" width="40px">
+             <img src="https://image.flaticon.com/icons/svg/1384/1384063.svg" class="px-1 ml-3" width="40px">
+             <img src="https://image.flaticon.com/icons/svg/2965/2965363.svg" class="px-1 ml-3" width="40px">
+             <img src="https://image.flaticon.com/icons/svg/732/732200.svg" class="px-1 ml-3" width="40px">
+              
+           </div>
+<div class="col-3  mt-sm-1 my-lg-4" style="display: flex;">
+   <p class="text-success  ">NUMBER:1202020</p>
+   <p class="text-success ">info:tumogmail@gmail.com</p>
+</div>
+  </div>
+ </div>
+</div>
+
+            </div>
+
+  
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
